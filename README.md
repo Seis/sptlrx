@@ -241,6 +241,10 @@ If you specify your Spotify cookie, the lyrics will be fetched using your accoun
 
 Run `sptlrx pipe` to start printing the current lines to stdout. This can be used in various status bars and other applications.
 
+### Writing to a file
+
+Run `sptlrx file --output path` or `sptlrx file -o path` to start writing the current lines to `path`. This can be used in various status bars and other applications. Only the current line will be in the file.
+
 ### Flags
 
 You can pass flags to override the style parameters defined in the config. Example:

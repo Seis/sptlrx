@@ -193,8 +193,11 @@ func init() {
 	rootCmd.Flags().StringVar(&FlagHAlignment, "halign", "center", "initial horizontal alignment (left/center/right)")
 
 	rootCmd.PersistentFlags().BoolVarP(&FlagVerbose, "verbose", "v", false, "force print errors")
+	rootCmd.Flags().StringVarP(&filePath, "output", "o", "/tmp/lyrics", "Path to the output file while using file command")
 
 	rootCmd.AddCommand(pipeCmd)
+
+	rootCmd.AddCommand(fileCmd)
 }
 
 func Execute() {
